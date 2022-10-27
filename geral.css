@@ -1,1 +1,33 @@
 
+body {
+    margin:0;
+    padding:0;
+}
+.calculadora {
+    background-color: rgb(151, 255, 203);
+    width: 200px;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 45px;
+}
+#tt {
+    color: rgb(40, 48, 39);
+    background-color: rgb(97, 252, 174);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.calculadora input {
+    background-color: rgb(4, 100, 79);
+    color: rgb(238, 188, 188);
+    border-radius: 5px;
+    padding: 5px;
+}
+#go {
+    background-color: rgb(248, 124, 124);
+    margin-top: 20px;
+}
+#go:hover {
+    background-color: royalblue;[
+    cursor: help;
+}
