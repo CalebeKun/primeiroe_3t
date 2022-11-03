@@ -9,6 +9,8 @@ body {
     color: rgb(0, 0, 0);
     padding: 15px;
     border-radius: 45px;
+    text-align: center;
+    box-shadow: 10px 10px blue;
 }
 #tt {
     color: rgb(40, 48, 39);
@@ -30,4 +32,13 @@ body {
 #go:hover {
     background-color: royalblue;[
     cursor: help;
+}
+.spmes{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 45px;
+    border-style: dashed;
+    border-color: violet;
+    border-width: 2px;
 }
