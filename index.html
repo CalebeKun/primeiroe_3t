@@ -7,28 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro E</title>
     <script src="estudo.js"></script>
+
+    <link rel="stylesheet" href="geral.css">
 </head>
 
 <body>
+    <input type="checkbox" id="calc">
     <div class="calculadora">
-        <div id="tt">
-            <span id="total">Total: 0,00</span><br>
+        <label for="calcfin"><h3>Financeira</h3></label>
+<div class="calc">
+
+        <div id="psTotal">
+            <span id="total">0,00</span><br>
         </div>
-        <div id="t1">
-            Valor: <input id="valor" placeholder="Capital" type="text"><br>
-        </div>
-        <div id="t2">
-            Juros(Mensal): <input id="juros" placeholder="% Juros" type="text"><br>
-        </div>
-        <div id="t3">
+        Valor: <input id="valor" placeholder="Capital" type="text"><br>
+        Juros(Mensal): <input id="juros" placeholder="% Juros" type="text"><br>
         Nr. Meses: <input id="meses" placeholder="tempo" type="text"><br>
-        </div>
-        <button id="go" onclick="calcula()">Enviar</button><br>
+        <button id="btnCalc" onclick="calcula()">Enviar</button><br>
         <div class="spmes">
-            <span id="mes">Mês a Mês</span>
+            <span id="mes"></span>
         </div>
-        <link rel="stylesheet" href="geral.css">
     </div>
+</div>
 </body>
 
 </html>
