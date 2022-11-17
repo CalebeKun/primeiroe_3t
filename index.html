@@ -1,34 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro E</title>
-    <script src="estudo.js"></script>
-
-    <link rel="stylesheet" href="geral.css">
+  <meta charset="utf-8">
+  <meta http-equv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-widh , initial-scale=1.0">
+  <title>Primeiro E</title>
+  <script src="estudo.js"></script>
+  <link rel="stylesheet" href="geral.css">
 </head>
 
 <body>
-    <input type="checkbox" id="calc">
-    <div class="calculadora">
-        <label for="calcfin"><h3>Financeira</h3></label>
-<div class="calc">
+  <input type="checkbox" id="calcFin">
+  <div class="calculadora">
+    <label for="calcFin">
+      <h3>Financeira</h3>
+    </label>
 
-        <div id="psTotal">
-            <span id="total">0,00</span><br>
-        </div>
-        Valor: <input id="valor" placeholder="Capital" type="text"><br>
-        Juros(Mensal): <input id="juros" placeholder="% Juros" type="text"><br>
-        Nr. Meses: <input id="meses" placeholder="tempo" type="text"><br>
-        <button id="btnCalc" onclick="calcula()">Enviar</button><br>
-        <div class="spmes">
-            <span id="mes"></span>
-        </div>
+    <div class="calcF">
+      <div id="psTotal">
+        <span id="total">Total: 0,00</span><br>
+      </div>
+      Valor: <input id="valor" placeholder="Digite o Capital" type="text"><br>
+      Juros(Mensal): <input id="juros" placeholder="Digite os Juros (mensal)" type="text"><br>
+      Nr. Meses: <input id="meses" placeholder="Digite o Tempo (meses)" type="text"><br>
+      <button id="btnCalc" onclick="calcula()">Enviar</button><br>
+      <div class="spmes">
+        <span id="mes">Mês a Mês</span>
+      </div>
     </div>
-</div>
-</body>
+  </div>
 
-</html>
+  <input type="checkbox" id="calcESG">
+  <div class="calculadoraESG">
+    <label for="calcESG">
+      <h3>Equação<br>Segundo Grau</h3>
+    </label>
+
+    <div class="calcESG">
+      <div id="psRaiz">
+        <span id="raiz">x1 e x2</span><br>
+      </div>
+      <input id="a" placeholder="Digite o valor de a" type="text"><br><br>
+      <input id="b" placeholder="DIgite o valor de b" type="text"><br><br>
+      <input id="c" placeholder="Digite o valor de c" type="text"><br><br>
+      <button onclick="calculaESG()">Calcular</button><br>
+    </div>
+
+  </div>
+
+  <br><br><br>
+
+  Nota 1: <input id="t1" type="text"><br>
+  Nota 2: <input id="t2" type="text"><br>
+  Nota 3: <input id="t3" type="text"><br>
+
+  <button onclick="somarNotas()">Somar Notas</button>
+  <span id="resultadosoma">0</span><br>
+  <button onclick="mediaNotas()">Média Notas</button>
+  <span id="resultadomedia">0</span><br>
+  <button onclick="fecharNotas()">Notas para Fechar</button>
+  <span id="resultadofechar">0</span><br>
+
+</body>
+<html>
